@@ -31,7 +31,7 @@ Instead of keeping the meetings' topic vague discussions, we have decided to hav
 
 - **Week 3**
 
-  - Meetup is scheduled for *Tuesday December 2, 2016* in places unknown
+  - Meetup is scheduled for *Thursday December 1, 2016* in places unknown
   - Abhijeet is going to be the mentor again. All are requested to be packing in case he puss out again, or don't come prepared
   - Topics to be covered in this meetup are:
     - [Assignment 1](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/assignments/)
