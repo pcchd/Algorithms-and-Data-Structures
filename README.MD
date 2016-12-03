@@ -31,13 +31,15 @@ Instead of keeping the meetings' topic vague discussions, we have decided to hav
 
 - **Week 3**
 
-  - Meetup is scheduled for *Tuesday December 2, 2016* in places unknown
-  - Abhijeet is going to be the mentor again. All are requested to be packing in case he puss out again, or don't come prepared
-  - Topics to be covered in this meetup are:
-    - [Assignment 1](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/assignments/)
+  - Meetup held on *Thursday December 1, 2016* in *Phase 4, Mohali*.
+  - Abhijeet took us through a couple assignment problems, however since we had no knowledge of recurrence relations, that problem is pending
+  - Topics covered in this meetup were:
+    - Part of [Assignment 1](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/assignments/)
     - [Recitation video 2](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/recitation-videos/recitation-2-python-cost-model-document-distance)
     - [Lecture video 3](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-3-insertion-sort-merge-sort)
-  - All are requested to come properly prepared, with assignment solved. Those lacking will be left alone in room with Bunny's shikari roommate
+
+- **Week 4**
+  _TBD_
 
 
 For more details about venue etc, come join our slack group: https://pcchd-slack.herokuapp.com/
