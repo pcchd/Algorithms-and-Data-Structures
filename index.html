@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2016-12-03 Sat 20:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Charanjit Singh" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/bigblow/css/hideshow.css"/>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/bigblow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/bigblow/js/hideshow.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf8c4b82">1. Lecture 1</a>
+<ul>
+<li><a href="#org2a25757">1.1. Peak Finding</a>
+<ul>
+<li><a href="#orgd730cc6">1.1.1. One Dimensional</a></li>
+<li><a href="#org3acdded">1.1.2. Two Dimensional</a></li>
+<li><a href="#org4510375">1.1.3. homework  Question</a></li>
+</ul>
+</li>
+<li><a href="#org49eec14">1.2. Prerequisites</a>
+<ul>
+<li><a href="#orgbe30d13">1.2.1. Asymptotic complexity</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd95e593">2. Lecture 2</a>
+<ul>
+<li><a href="#org3c15409">2.1. Model of computation</a>
+<ul>
+<li><a href="#orgecc900a">2.1.1. Random Access Machine</a></li>
+<li><a href="#org6fc14a1">2.1.2. Pointer Machine</a></li>
+</ul>
+</li>
+<li><a href="#orgf720e7b">2.2. Cost Model of Python</a></li>
+<li><a href="#org762e916">2.3. Document distance problem</a>
+<ul>
+<li><a href="#org20a9ec2">2.3.1. Solutions</a></li>
+</ul>
+</li>
+<li><a href="#org8c4d1a9">2.4. Recitation</a>
+<ul>
+<li><a href="#orgf8d60c1">2.4.1. Document Distance</a></li>
+<li><a href="#orgf8daf9a">2.4.2. Python Cost Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2d730ae">3. Lecture 3</a>
+<ul>
+<li><a href="#orgffec71a">3.1. sorting</a>
+<ul>
+<li><a href="#org5878102">3.1.1. Insertion sort</a></li>
+<li><a href="#orgf89b61e">3.1.2. Binary-Insertion sort</a></li>
+<li><a href="#org9a36b76">3.1.3. Merge Sort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf8c4b82" class="outline-2">
+<h2 id="orgf8c4b82"><span class="section-number-2">1</span> Lecture 1</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-org2a25757" class="outline-3">
+<h3 id="org2a25757"><span class="section-number-3">1.1</span> Peak Finding</h3>
+<div class="outline-text-3" id="text-1-1">
+</div><div id="outline-container-orgd730cc6" class="outline-4">
+<h4 id="orgd730cc6"><span class="section-number-4">1.1.1</span> One Dimensional</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>A position <code>b</code> in array of <code>a, b, c, d, e, f</code> is a peak iff <code>b &gt;= a</code> and <code>b &gt;= c</code>
+For edges (<code>f</code>) we only look at one side.</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="orga016bb4"></a>Problem: Find a peak if it exists<br  /><div class="outline-text-5" id="text-1-1-1-1">
+<p>
+We have an array <code>a</code> of length <code>n</code>
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="org428b433"></a>Straightforward algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-1">
+<ul class="org-ul">
+<li>Start from the left, keep comparing until a peak is found
+Worst case complexity: <code>theta n</code></li>
+</ul>
+</div></li>
+
+<li><a id="org9c2570f"></a>Divide and Conquer Algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-2">
+<ul class="org-ul">
+<li>Start at <code>n/2</code></li>
+<li>if <code>a[n/2] &lt; a[n/2 - 1]</code> then only loot at left half <code>1 .. n/2 -1</code></li>
+<li>else if <code>a[n/2] &lt; a[n/2 + 1]</code> then only loot at right half <code>n/2 + 1 .. n</code></li>
+<li><p>
+else <code>n/2</code> is a peak
+</p>
+
+<p>
+Complexity is <code>theta(log2 n)</code>
+</p></li>
+</ul>
+</div></li></ol></li></ol>
+</div>
+
+<div id="outline-container-org3acdded" class="outline-4">
+<h4 id="org3acdded"><span class="section-number-4">1.1.2</span> Two Dimensional</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li>An element <code>a</code> which is surrounded by <code>c</code> (top), <code>d</code> (right), <code>e</code> bottom and <code>b</code> (left), is a peak iff <code>a &gt;= b, a &gt;= d, a &gt;= c, a &gt;= e</code></li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="orgcd029f2"></a>Problem: Find peak if it exists<br  /><div class="outline-text-5" id="text-1-1-2-1">
+<p>
+We have a 2 dimensional array of <code>n X m</code> rows and columns
+</p>
+</div>
+
+<ol class="org-ol"><li><a id="org11ab134"></a>Greedy Ascent Algorithm<br  /><div class="outline-text-6" id="text-1-1-2-1-1">
+<ul class="org-ul">
+<li>Complexity: <code>theta(nm)</code></li>
+</ul>
+</div></li>
+
+<li><a id="org9eaa0d1"></a>Divide and Conquer: Incorrect approach<br  /><div class="outline-text-6" id="text-1-1-2-1-2">
+<ul class="org-ul">
+<li>Pick the middle column <code>j = m/2</code></li>
+<li>Find a one-dimensional-peak at <code>(i, j)</code></li>
+<li>Use <code>(i, j)</code> as a start to find one-dimensional peak on row <code>i</code></li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="org925b343"></a>Problem<br  /><div class="outline-text-7" id="text-1-1-2-1-2-1">
+<ul class="org-ul">
+<li>A 2D array might not have a peak</li>
+</ul>
+</div></li></ol></li>
+
+<li><a id="orga9998d4"></a>Divide and Conquer: Correct approach<br  /><div class="outline-text-6" id="text-1-1-2-1-3">
+<ul class="org-ul">
+<li>Pick a middle column <code>j = m/2</code></li>
+<li>Find global maximum on column <code>j</code> at <code>(i, j)</code></li>
+<li>Compare <code>(i, j-1), (i, j), (i, j + 1)</code></li>
+<li>Pick left cols if <code>(i, j -1) &gt; (i, j)</code>; Similarly for the right</li>
+<li>If <code>(i, j) &gt;= (i, j-1), (i, j+1)</code>, then <code>(i, j)</code> is a 2-D peakq</li>
+</ul>
+</div></li></ol></li></ol>
+</div>
+
+<div id="outline-container-org4510375" class="outline-4">
+<h4 id="org4510375"><span class="section-number-4">1.1.3</span> homework  Question</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ul class="org-ul">
+<li>Argue that: every array has a peak</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org49eec14" class="outline-3">
+<h3 id="org49eec14"><span class="section-number-3">1.2</span> Prerequisites</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-orgbe30d13" class="outline-4">
+<h4 id="orgbe30d13"><a id="ID-7483C04B-5DDB-4994-8A9F-94E120A65BF2"></a><span class="section-number-4">1.2.1</span> Asymptotic complexity</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<ul class="org-ul">
+<li>Provide basic vocabulary for discussing design and analysis of algorithms</li>
+<li>Allow suppressing useless (from POV of algorithm design) details like architecture/language/compiler</li>
+<li>Allow making useful comparisons b/w different algorithms</li>
+<li>Suppress constant factors and lower-order terms</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="org5384a8b"></a>Big Oh<br  /><div class="outline-text-5" id="text-1-2-1-1">
+<ul class="org-ul">
+<li>Worst case running time of an algorithm</li>
+<li>Eventually for all sufficiently large <code>n</code>, <code>T(n)</code> is bounded above by a constant multiple of <code>f(n)</code></li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="org3940eef"></a>Properties<br  /><div class="outline-text-6" id="text-1-2-1-1-1">
+<ul class="org-ul">
+<li><p>
+If \(f(x)\) can be written as a finite set of sum of other functions, then the fastest growing function determine the order of \(f(n)\)
+</p>
+
+<p>
+e.g \[f(n) = 9 log n + 5(log n)^3 + 3n^2 + 2n^3 = O(n^3)\]
+</p></li>
+
+<li>Normally we ignore when variable is being multiplied with a constant, however in case of \(k^{nc}\) where \(n\) is variable and \(c\) is constant, we cannot ignore \(c\). It contributes exponentially, and is hence significant</li>
+
+<li>\(O(c^n)\) and \(O(n^c)\) are very different. For \(c > 1\), \(O(c^n)\) grows much faster than \(O(n^c)\)</li>
+<li>A function that grows faster than \(n^c\) for any \(c\) is called <i>superpolynomial</i>.</li>
+<li>A function that grows slowly than any exponential function \(c^n\) is called <i>subexponential</i></li>
+<li>We may ignore all powers of \(n\) inside of logarithms.
+\(O(log n)\) is same as \(O(log (n^c))\) because \(log(n^c) = c log n\)</li>
+<li>logs with different bases are equivalent</li>
+
+<li><p>
+<b>Product</b>
+</p>
+
+<p>
+\[f_1 = O(g_1) \text{ and } f_2 = O(g_2) \Rightarrow f_1 f_2 = O(g_1 g_2)\]
+</p>
+
+<p>
+\[f.O(g) = O(fg)\]
+</p></li>
+
+<li><p>
+<b>Sum</b>
+</p>
+
+<p>
+\[f_1 = O(g_1) \text{ and } f_2 = O(g_2) \Rightarrow f_1 + f_2 = O(|g_1| + |g_2|)\]
+</p></li>
+
+<li><p>
+<b>Multiplication by a constant</b>
+</p>
+
+<p>
+For a constant \(k\), \(O(kg) = O(g)\) if \(k\) is nonzero
+</p></li>
+
+<li><p>
+<b>Orders of common functions</b>
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Notation</th>
+<th scope="col" class="org-left">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(O(1)\)</td>
+<td class="org-left">constant</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(\log \log n)\)</td>
+<td class="org-left">double logarithmic</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(\log n)\)</td>
+<td class="org-left">logarithmic</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O((\log n)^{c}), c > 1\)</td>
+<td class="org-left">polylogarithmic</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n^{c}), 0 < c < 1\)</td>
+<td class="org-left">fractional power</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n)\)</td>
+<td class="org-left">linear</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n\log ^{*}n)\)</td>
+<td class="org-left">n log-star n</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n\log n)=O(\log n!)\)</td>
+<td class="org-left">linearithmic, loglinear, or quasilinear</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n^{2})\)</td>
+<td class="org-left">quadratic</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n^{c})\)</td>
+<td class="org-left">polynomial or algebraic</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(c^{n}), c > 1\)</td>
+<td class="org-left">exponential</td>
+</tr>
+
+<tr>
+<td class="org-left">\(O(n!)\)</td>
+<td class="org-left">factorial</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+</div></li></ol></li>
+
+<li><a id="org30469e3"></a>Omega<br  /><div class="outline-text-5" id="text-1-2-1-2">
+<ul class="org-ul">
+<li>Best case running time of an algorithm</li>
+</ul>
+</div></li>
+
+<li><a id="orgda330cd"></a>Theta<br  /><div class="outline-text-5" id="text-1-2-1-3">
+<ul class="org-ul">
+<li>Average case running time of an algorithm</li>
+<li>It is not the average of all times, but a function which represents all the times</li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd95e593" class="outline-2">
+<h2 id="orgd95e593"><span class="section-number-2">2</span> Lecture 2</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><p>
+An algorithms is computational proceduer for solving a problem
+</p>
+
+<p>
+input -&gt; algorithm -&gt; Output
+</p></li>
+</ul>
+</div>
+
+<div id="outline-container-org3c15409" class="outline-3">
+<h3 id="org3c15409"><span class="section-number-3">2.1</span> Model of computation</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>specifies
+<ul class="org-ul">
+<li>what operations an algorithm is allowed</li>
+<li>cost (time, &#x2026;) of each operation</li>
+</ul></li>
+<li>Can be considered different ways of thinking, similar to different programming styles (OOP, Functional etc)</li>
+</ul>
+</div>
+
+<div id="outline-container-orgecc900a" class="outline-4">
+<h4 id="orgecc900a"><span class="section-number-4">2.1.1</span> Random Access Machine</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<ul class="org-ul">
+<li>Mathematical analog of Random Access Memory</li>
+<li>Random Access Memory is modeled by a big array, and is organized by <b>words</b></li>
+<li>A <b>word</b> is: <code>w</code> bits</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="org16d9af7"></a>How we compute with this model?<br  /><div class="outline-text-5" id="text-2-1-1-1">
+<p>
+In constant time an algorithm can
+</p>
+<ul class="org-ul">
+<li>load a constant number of words in memory</li>
+<li>do a constant number of computations on them</li>
+<li>store a constant number of words</li>
+</ul>
+</div></li></ol>
+</div>
+
+<div id="outline-container-org6fc14a1" class="outline-4">
+<h4 id="org6fc14a1"><span class="section-number-4">2.1.2</span> Pointer Machine</h4>
+<div class="outline-text-4" id="text-2-1-2">
+<ul class="org-ul">
+<li>Dynamically allocated objects</li>
+<li>object: has a constant number of fields</li>
+<li>field: is either a word (e.g int), or a pointer</li>
+<li>pointer is something that points to another object, or has a special value <code>null</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf720e7b" class="outline-3">
+<h3 id="orgf720e7b"><span class="section-number-3">2.2</span> Cost Model of Python</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>List
+<ul class="org-ul">
+<li>list = array</li>
+<li>object with constant number of attributes take constant time to manipulate</li>
+<li>list.append(x)
+<ul class="org-ul">
+<li>table doubling (in lecture 9), takes constant time <code>O(1)</code></li>
+</ul></li>
+<li>list = list1 + list
+<ul class="org-ul">
+<li>Python simply create an empty list, and append each item of other two lists</li>
+<li>Since <code>list.append</code> is constant time operation, adding two lists is <code>1 + O(len list1) + O(len list2)</code> (<sub>1</sub> +_ because for creating a new list)</li>
+</ul></li>
+<li>list.sort
+<ul class="org-ul">
+<li>takes <code>O(|l| \log |l|)</code> time</li>
+<li>uses comparison sort</li>
+</ul></li>
+</ul></li>
+<li>Dict
+<ul class="org-ul">
+<li>Dict[key] = value
+takes <code>O(1)</code> time</li>
+<li>A dict in python is a hash</li>
+<li>Most (not all) operations on dict are constant time</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org762e916" class="outline-3">
+<h3 id="org762e916"><span class="section-number-3">2.3</span> Document distance problem</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<code>d(D1, D2)</code>
+</p>
+
+<ul class="org-ul">
+<li>Determine how different or similar two documents are</li>
+<li>A document is a sequence of words. Can also be thought of as a string</li>
+<li>A word is a string of alphanumeric characters</li>
+</ul>
+</div>
+<div id="outline-container-org20a9ec2" class="outline-4">
+<h4 id="org20a9ec2"><span class="section-number-4">2.3.1</span> Solutions</h4>
+<div class="outline-text-4" id="text-2-3-1">
+</div><ol class="org-ol"><li><a id="orgf3b33ef"></a>Simple solution: Shared Words<br  /><div class="outline-text-5" id="text-2-3-1-1">
+<ul class="org-ul">
+<li>Split the document into words</li>
+<li>Compute word frequencies</li>
+<li>Compute the dot product of two vectors obtained from frequencies</li>
+</ul>
+</div></li></ol>
+</div>
+</div>
+
+<div id="outline-container-org8c4d1a9" class="outline-3">
+<h3 id="org8c4d1a9"><span class="section-number-3">2.4</span> Recitation</h3>
+<div class="outline-text-3" id="text-2-4">
+</div><div id="outline-container-orgf8d60c1" class="outline-4">
+<h4 id="orgf8d60c1"><span class="section-number-4">2.4.1</span> Document Distance</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<ul class="org-ul">
+<li>We have two strings</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="orgf29e2ae"></a>Algorithm<br  /><div class="outline-text-5" id="text-2-4-1-1">
+<ul class="org-ul">
+<li>Split the lists into words, get rid of punctuation and lowercase every word</li>
+<li>Convert lists to vectors of word and frequency of the word in the list.
+i.e create frequency distribution of words in lists</li>
+<li>Find dot product of two vectors
+Dot product is simply multiplying the frequencies of same words from both vectors, and adding the results.
+If a word occur in only one vector, it contributes <code>0</code> to the sum.</li>
+</ul>
+</div></li></ol>
+</div>
+
+<div id="outline-container-orgf8daf9a" class="outline-4">
+<h4 id="orgf8daf9a"><span class="section-number-4">2.4.2</span> Python Cost Model</h4>
+</div>
+</div>
+</div>
+<div id="outline-container-org2d730ae" class="outline-2">
+<h2 id="org2d730ae"><span class="section-number-2">3</span> Lecture 3</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-orgffec71a" class="outline-3">
+<h3 id="orgffec71a"><span class="section-number-3">3.1</span> sorting</h3>
+<div class="outline-text-3" id="text-3-1">
+</div><div id="outline-container-org5878102" class="outline-4">
+<h4 id="org5878102"><span class="section-number-4">3.1.1</span> Insertion sort</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+we have an array <code>[1, 4, 5, 2, 3 ... n]</code>
+</p>
+
+<ul class="org-ul">
+<li>we start with considering item at second position to be a <code>key</code>, and swap it with the item left if it is greater then <code>key</code></li>
+<li>next we consider item at 3rd position as our key, and compare it with item on its left, and swap if needed; and do it repeatedly until it reaches its right place.
+i.e item on its left is less than <code>key</code></li>
+<li>same step is followed for every item until there are no more items left i.e until the array is sorted</li>
+
+<li><p>
+<b>complexity</b>
+</p>
+
+<p>
+\[t(n) = \theta(n^2)\]
+</p>
+
+<p>
+\(\theta(n)\) for compares and \(\theta(n)\) for swaps
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf89b61e" class="outline-4">
+<h4 id="orgf89b61e"><span class="section-number-4">3.1.2</span> Binary-Insertion sort</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li>Same as insertion sort except instead of swapping, we use binary search to insert item in sorted part of the array (part left to <code>key</code>)</li>
+<li><p>
+<b>Complexity</b>
+</p>
+
+<p>
+\[T(n) = \theta(n \log n)\]
+</p>
+
+<p>
+\(\theta(n)\) for compares, and \(\theta(\log n)\) for binary-searched insertions. This is assuming that insertion is \(\theta n\).
+If insertion involves shifting items to right (as with swapping), then the complexity is again $&theta; n<sup>2</sup>$b
+</p></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9a36b76" class="outline-4">
+<h4 id="org9a36b76"><span class="section-number-4">3.1.3</span> Merge Sort</h4>
+<div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li>We start with an array <code>A</code>; we split it into <code>L</code>  and <code>R</code></li>
+<li>We split <code>L</code> and <code>R</code> same way as <code>A</code>, until we have single item arrays</li>
+<li>We <b>merge</b> arrays from bottom up, and we get the sorted array.
+Sorting work is done in the merge step</li>
+<li><b>Merge step</b>
+<ul class="org-ul">
+<li>We start at the bottom, and merge two items while keeping smaller item first</li>
+<li>Same is done with all pairs, and we now have 2 item arrays at bottom</li>
+<li>Then we merge 2 item arrays
+<ul class="org-ul">
+<li>We pick first item (smallest) of one (of the two) array, and compare it with first item on the other array</li>
+<li>We put smaller item first, and compare the same item with other item of second array until <code>second array item &gt; first array item</code> is found</li>
+<li>Same is done with all the 2-item arrays, and we end up with 4 item arrays</li>
+</ul></li>
+<li>All arrays are merged in same fashion until we have only one array; which is the sorted array we wanted</li>
+</ul></li>
+
+<li><p>
+<b>Complexity</b>
+</p>
+
+<p>
+\[T(n) = \theta n \log  n\]
+</p></li>
+
+<li>Insertion sort has advantage over Merge Sort when auxiliary space is considered, because Insertion Sort works in-place</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Charanjit Singh</p>
+<p class="date">Created: 2016-12-03 Sat 20:46</p>
+<p class="validation"></p>
+</div>
+</body>
+</html>
