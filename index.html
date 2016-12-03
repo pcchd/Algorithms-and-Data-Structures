@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-12-03 Sat 21:05 -->
+<!-- 2016-12-03 Sat 21:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MIT Course 6-006 Notes : Programmers' Club Chandigarh Algo Study Group</title>
@@ -257,7 +257,7 @@ for the JavaScript code in this tag.
 });
 </script>
 <script type="text/javascript"
-        src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -266,51 +266,51 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org51c3be7">1. Lecture 1</a>
+<li><a href="#orgafdbcbc">1. Lecture 1</a>
 <ul>
-<li><a href="#orgf0c57ad">1.1. Peak Finding</a>
+<li><a href="#org7611dfb">1.1. Peak Finding</a>
 <ul>
-<li><a href="#org73129e1">1.1.1. One Dimensional</a></li>
-<li><a href="#org46e49fc">1.1.2. Two Dimensional</a></li>
-<li><a href="#org9329141">1.1.3. homework  Question</a></li>
+<li><a href="#org85465df">1.1.1. One Dimensional</a></li>
+<li><a href="#orgcd5a66d">1.1.2. Two Dimensional</a></li>
+<li><a href="#org6b95907">1.1.3. homework  Question</a></li>
 </ul>
 </li>
-<li><a href="#orgaf8a90f">1.2. Prerequisites</a>
+<li><a href="#orgf62e7fa">1.2. Prerequisites</a>
 <ul>
-<li><a href="#org03f99c9">1.2.1. Asymptotic complexity</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org05fb0de">2. Lecture 2</a>
-<ul>
-<li><a href="#org02992ca">2.1. Model of computation</a>
-<ul>
-<li><a href="#org035f98a">2.1.1. Random Access Machine</a></li>
-<li><a href="#org66de9dc">2.1.2. Pointer Machine</a></li>
-</ul>
-</li>
-<li><a href="#org96b9c6e">2.2. Cost Model of Python</a></li>
-<li><a href="#orgbd6912e">2.3. Document distance problem</a>
-<ul>
-<li><a href="#org16ad96b">2.3.1. Solutions</a></li>
-</ul>
-</li>
-<li><a href="#orgeedd489">2.4. Recitation</a>
-<ul>
-<li><a href="#orgb4b5c90">2.4.1. Document Distance</a></li>
-<li><a href="#org3a49aaa">2.4.2. Python Cost Model</a></li>
+<li><a href="#org4da070b">1.2.1. Asymptotic complexity</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org3a196dc">3. Lecture 3</a>
+<li><a href="#org176e8fc">2. Lecture 2</a>
 <ul>
-<li><a href="#orgfaf6d73">3.1. Sorting</a>
+<li><a href="#orgbf1f3a7">2.1. Model of computation</a>
 <ul>
-<li><a href="#orgfc0030b">3.1.1. Insertion sort</a></li>
-<li><a href="#org26f6310">3.1.2. Binary-Insertion sort</a></li>
-<li><a href="#org198bb76">3.1.3. Merge Sort</a></li>
+<li><a href="#orga1c4c1f">2.1.1. Random Access Machine</a></li>
+<li><a href="#orgf545fd1">2.1.2. Pointer Machine</a></li>
+</ul>
+</li>
+<li><a href="#orgf13f016">2.2. Cost Model of Python</a></li>
+<li><a href="#org745d316">2.3. Document distance problem</a>
+<ul>
+<li><a href="#org6c79533">2.3.1. Solutions</a></li>
+</ul>
+</li>
+<li><a href="#orge1ee9dd">2.4. Recitation</a>
+<ul>
+<li><a href="#org9653016">2.4.1. Document Distance</a></li>
+<li><a href="#org1ae3f2f">2.4.2. Python Cost Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org758faf4">3. Lecture 3</a>
+<ul>
+<li><a href="#orgff223f4">3.1. Sorting</a>
+<ul>
+<li><a href="#org92cb402">3.1.1. Insertion sort</a></li>
+<li><a href="#org215d422">3.1.2. Binary-Insertion sort</a></li>
+<li><a href="#orgc6baced">3.1.3. Merge Sort</a></li>
 </ul>
 </li>
 </ul>
@@ -319,14 +319,14 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org51c3be7" class="outline-2">
-<h2 id="org51c3be7"><span class="section-number-2">1</span> Lecture 1</h2>
+<div id="outline-container-orgafdbcbc" class="outline-2">
+<h2 id="orgafdbcbc"><span class="section-number-2">1</span> Lecture 1</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgf0c57ad" class="outline-3">
-<h3 id="orgf0c57ad"><span class="section-number-3">1.1</span> Peak Finding</h3>
+</div><div id="outline-container-org7611dfb" class="outline-3">
+<h3 id="org7611dfb"><span class="section-number-3">1.1</span> Peak Finding</h3>
 <div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-org73129e1" class="outline-4">
-<h4 id="org73129e1"><span class="section-number-4">1.1.1</span> One Dimensional</h4>
+</div><div id="outline-container-org85465df" class="outline-4">
+<h4 id="org85465df"><span class="section-number-4">1.1.1</span> One Dimensional</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>A position <code>b</code> in array of <code>a, b, c, d, e, f</code> is a peak iff <code>b &gt;= a</code> and <code>b &gt;= c</code>
@@ -334,20 +334,20 @@ For edges (<code>f</code>) we only look at one side.</li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org4fd841f"></a>Problem: Find a peak if it exists<br  /><div class="outline-text-5" id="text-1-1-1-1">
+<ol class="org-ol"><li><a id="orgfd31964"></a>Problem: Find a peak if it exists<br  /><div class="outline-text-5" id="text-1-1-1-1">
 <p>
 We have an array <code>a</code> of length <code>n</code>
 </p>
 </div>
 
-<ol class="org-ol"><li><a id="org3cae166"></a>Straightforward algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-1">
+<ol class="org-ol"><li><a id="org3312bd3"></a>Straightforward algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-1">
 <ul class="org-ul">
 <li>Start from the left, keep comparing until a peak is found
 Worst case complexity: <code>theta n</code></li>
 </ul>
 </div></li>
 
-<li><a id="orgdbeab3b"></a>Divide and Conquer Algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-2">
+<li><a id="org41c5e93"></a>Divide and Conquer Algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-2">
 <ul class="org-ul">
 <li>Start at <code>n/2</code></li>
 <li>if <code>a[n/2] &lt; a[n/2 - 1]</code> then only loot at left half <code>1 .. n/2 -1</code></li>
@@ -363,27 +363,27 @@ Complexity is <code>theta(log2 n)</code>
 </div></li></ol></li></ol>
 </div>
 
-<div id="outline-container-org46e49fc" class="outline-4">
-<h4 id="org46e49fc"><span class="section-number-4">1.1.2</span> Two Dimensional</h4>
+<div id="outline-container-orgcd5a66d" class="outline-4">
+<h4 id="orgcd5a66d"><span class="section-number-4">1.1.2</span> Two Dimensional</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <ul class="org-ul">
 <li>An element <code>a</code> which is surrounded by <code>c</code> (top), <code>d</code> (right), <code>e</code> bottom and <code>b</code> (left), is a peak iff <code>a &gt;= b, a &gt;= d, a &gt;= c, a &gt;= e</code></li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org5ad512b"></a>Problem: Find peak if it exists<br  /><div class="outline-text-5" id="text-1-1-2-1">
+<ol class="org-ol"><li><a id="org930b8e9"></a>Problem: Find peak if it exists<br  /><div class="outline-text-5" id="text-1-1-2-1">
 <p>
 We have a 2 dimensional array of <code>n X m</code> rows and columns
 </p>
 </div>
 
-<ol class="org-ol"><li><a id="orgbd7daac"></a>Greedy Ascent Algorithm<br  /><div class="outline-text-6" id="text-1-1-2-1-1">
+<ol class="org-ol"><li><a id="org025fc66"></a>Greedy Ascent Algorithm<br  /><div class="outline-text-6" id="text-1-1-2-1-1">
 <ul class="org-ul">
 <li>Complexity: <code>theta(nm)</code></li>
 </ul>
 </div></li>
 
-<li><a id="org5408dd6"></a>Divide and Conquer: Incorrect approach<br  /><div class="outline-text-6" id="text-1-1-2-1-2">
+<li><a id="orge878671"></a>Divide and Conquer: Incorrect approach<br  /><div class="outline-text-6" id="text-1-1-2-1-2">
 <ul class="org-ul">
 <li>Pick the middle column <code>j = m/2</code></li>
 <li>Find a one-dimensional-peak at <code>(i, j)</code></li>
@@ -391,13 +391,13 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org01212e2"></a>Problem<br  /><div class="outline-text-7" id="text-1-1-2-1-2-1">
+<ol class="org-ol"><li><a id="orgfd4857f"></a>Problem<br  /><div class="outline-text-7" id="text-1-1-2-1-2-1">
 <ul class="org-ul">
 <li>A 2D array might not have a peak</li>
 </ul>
 </div></li></ol></li>
 
-<li><a id="orgfbacd38"></a>Divide and Conquer: Correct approach<br  /><div class="outline-text-6" id="text-1-1-2-1-3">
+<li><a id="orge819310"></a>Divide and Conquer: Correct approach<br  /><div class="outline-text-6" id="text-1-1-2-1-3">
 <ul class="org-ul">
 <li>Pick a middle column <code>j = m/2</code></li>
 <li>Find global maximum on column <code>j</code> at <code>(i, j)</code></li>
@@ -408,8 +408,8 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </div></li></ol></li></ol>
 </div>
 
-<div id="outline-container-org9329141" class="outline-4">
-<h4 id="org9329141"><span class="section-number-4">1.1.3</span> homework  Question</h4>
+<div id="outline-container-org6b95907" class="outline-4">
+<h4 id="org6b95907"><span class="section-number-4">1.1.3</span> homework  Question</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>Argue that: every array has a peak</li>
@@ -418,11 +418,11 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </div>
 </div>
 
-<div id="outline-container-orgaf8a90f" class="outline-3">
-<h3 id="orgaf8a90f"><span class="section-number-3">1.2</span> Prerequisites</h3>
+<div id="outline-container-orgf62e7fa" class="outline-3">
+<h3 id="orgf62e7fa"><span class="section-number-3">1.2</span> Prerequisites</h3>
 <div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-org03f99c9" class="outline-4">
-<h4 id="org03f99c9"><a id="ID-7483C04B-5DDB-4994-8A9F-94E120A65BF2"></a><span class="section-number-4">1.2.1</span> Asymptotic complexity</h4>
+</div><div id="outline-container-org4da070b" class="outline-4">
+<h4 id="org4da070b"><a id="ID-7483C04B-5DDB-4994-8A9F-94E120A65BF2"></a><span class="section-number-4">1.2.1</span> Asymptotic complexity</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li>Provide basic vocabulary for discussing design and analysis of algorithms</li>
@@ -432,14 +432,14 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="orga71b0e8"></a>Big Oh<br  /><div class="outline-text-5" id="text-1-2-1-1">
+<ol class="org-ol"><li><a id="org9b710e3"></a>Big Oh<br  /><div class="outline-text-5" id="text-1-2-1-1">
 <ul class="org-ul">
 <li>Worst case running time of an algorithm</li>
 <li>Eventually for all sufficiently large <code>n</code>, <code>T(n)</code> is bounded above by a constant multiple of <code>f(n)</code></li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="orga928226"></a>Properties<br  /><div class="outline-text-6" id="text-1-2-1-1-1">
+<ol class="org-ol"><li><a id="org24310f4"></a>Properties<br  /><div class="outline-text-6" id="text-1-2-1-1-1">
 <ul class="org-ul">
 <li><p>
 If \(f(x)\) can be written as a finite set of sum of other functions, then the fastest growing function determine the order of \(f(n)\)
@@ -569,13 +569,13 @@ For a constant \(k\), \(O(kg) = O(g)\) if \(k\) is nonzero
 </ul>
 </div></li></ol></li>
 
-<li><a id="org7a49298"></a>Omega<br  /><div class="outline-text-5" id="text-1-2-1-2">
+<li><a id="org4743193"></a>Omega<br  /><div class="outline-text-5" id="text-1-2-1-2">
 <ul class="org-ul">
 <li>Best case running time of an algorithm</li>
 </ul>
 </div></li>
 
-<li><a id="org6eb00fd"></a>Theta<br  /><div class="outline-text-5" id="text-1-2-1-3">
+<li><a id="org22fc9d8"></a>Theta<br  /><div class="outline-text-5" id="text-1-2-1-3">
 <ul class="org-ul">
 <li>Average case running time of an algorithm</li>
 <li>It is not the average of all times, but a function which represents all the times</li>
@@ -585,8 +585,8 @@ For a constant \(k\), \(O(kg) = O(g)\) if \(k\) is nonzero
 </div>
 </div>
 
-<div id="outline-container-org05fb0de" class="outline-2">
-<h2 id="org05fb0de"><span class="section-number-2">2</span> Lecture 2</h2>
+<div id="outline-container-org176e8fc" class="outline-2">
+<h2 id="org176e8fc"><span class="section-number-2">2</span> Lecture 2</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><p>
@@ -599,8 +599,8 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<div id="outline-container-org02992ca" class="outline-3">
-<h3 id="org02992ca"><span class="section-number-3">2.1</span> Model of computation</h3>
+<div id="outline-container-orgbf1f3a7" class="outline-3">
+<h3 id="orgbf1f3a7"><span class="section-number-3">2.1</span> Model of computation</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>specifies
@@ -612,8 +612,8 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<div id="outline-container-org035f98a" class="outline-4">
-<h4 id="org035f98a"><span class="section-number-4">2.1.1</span> Random Access Machine</h4>
+<div id="outline-container-orga1c4c1f" class="outline-4">
+<h4 id="orga1c4c1f"><span class="section-number-4">2.1.1</span> Random Access Machine</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>Mathematical analog of Random Access Memory</li>
@@ -622,7 +622,7 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org3d8438f"></a>How we compute with this model?<br  /><div class="outline-text-5" id="text-2-1-1-1">
+<ol class="org-ol"><li><a id="org00cdadf"></a>How we compute with this model?<br  /><div class="outline-text-5" id="text-2-1-1-1">
 <p>
 In constant time an algorithm can
 </p>
@@ -634,8 +634,8 @@ In constant time an algorithm can
 </div></li></ol>
 </div>
 
-<div id="outline-container-org66de9dc" class="outline-4">
-<h4 id="org66de9dc"><span class="section-number-4">2.1.2</span> Pointer Machine</h4>
+<div id="outline-container-orgf545fd1" class="outline-4">
+<h4 id="orgf545fd1"><span class="section-number-4">2.1.2</span> Pointer Machine</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>Dynamically allocated objects</li>
@@ -647,8 +647,8 @@ In constant time an algorithm can
 </div>
 </div>
 
-<div id="outline-container-org96b9c6e" class="outline-3">
-<h3 id="org96b9c6e"><span class="section-number-3">2.2</span> Cost Model of Python</h3>
+<div id="outline-container-orgf13f016" class="outline-3">
+<h3 id="orgf13f016"><span class="section-number-3">2.2</span> Cost Model of Python</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>List
@@ -681,8 +681,8 @@ takes <code>O(1)</code> time</li>
 </div>
 </div>
 
-<div id="outline-container-orgbd6912e" class="outline-3">
-<h3 id="orgbd6912e"><span class="section-number-3">2.3</span> Document distance problem</h3>
+<div id="outline-container-org745d316" class="outline-3">
+<h3 id="org745d316"><span class="section-number-3">2.3</span> Document distance problem</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 <code>d(D1, D2)</code>
@@ -694,10 +694,10 @@ takes <code>O(1)</code> time</li>
 <li>A word is a string of alphanumeric characters</li>
 </ul>
 </div>
-<div id="outline-container-org16ad96b" class="outline-4">
-<h4 id="org16ad96b"><span class="section-number-4">2.3.1</span> Solutions</h4>
+<div id="outline-container-org6c79533" class="outline-4">
+<h4 id="org6c79533"><span class="section-number-4">2.3.1</span> Solutions</h4>
 <div class="outline-text-4" id="text-2-3-1">
-</div><ol class="org-ol"><li><a id="org7af1a9c"></a>Simple solution: Shared Words<br  /><div class="outline-text-5" id="text-2-3-1-1">
+</div><ol class="org-ol"><li><a id="org94e25f4"></a>Simple solution: Shared Words<br  /><div class="outline-text-5" id="text-2-3-1-1">
 <ul class="org-ul">
 <li>Split the document into words</li>
 <li>Compute word frequencies</li>
@@ -707,18 +707,18 @@ takes <code>O(1)</code> time</li>
 </div>
 </div>
 
-<div id="outline-container-orgeedd489" class="outline-3">
-<h3 id="orgeedd489"><span class="section-number-3">2.4</span> Recitation</h3>
+<div id="outline-container-orge1ee9dd" class="outline-3">
+<h3 id="orge1ee9dd"><span class="section-number-3">2.4</span> Recitation</h3>
 <div class="outline-text-3" id="text-2-4">
-</div><div id="outline-container-orgb4b5c90" class="outline-4">
-<h4 id="orgb4b5c90"><span class="section-number-4">2.4.1</span> Document Distance</h4>
+</div><div id="outline-container-org9653016" class="outline-4">
+<h4 id="org9653016"><span class="section-number-4">2.4.1</span> Document Distance</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <ul class="org-ul">
 <li>We have two strings</li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org3715331"></a>Algorithm<br  /><div class="outline-text-5" id="text-2-4-1-1">
+<ol class="org-ol"><li><a id="org4825b05"></a>Algorithm<br  /><div class="outline-text-5" id="text-2-4-1-1">
 <ul class="org-ul">
 <li>Split the lists into words, get rid of punctuation and lowercase every word</li>
 <li>Convert lists to vectors of word and frequency of the word in the list.
@@ -730,19 +730,19 @@ If a word occur in only one vector, it contributes <code>0</code> to the sum.</l
 </div></li></ol>
 </div>
 
-<div id="outline-container-org3a49aaa" class="outline-4">
-<h4 id="org3a49aaa"><span class="section-number-4">2.4.2</span> Python Cost Model</h4>
+<div id="outline-container-org1ae3f2f" class="outline-4">
+<h4 id="org1ae3f2f"><span class="section-number-4">2.4.2</span> Python Cost Model</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org3a196dc" class="outline-2">
-<h2 id="org3a196dc"><span class="section-number-2">3</span> Lecture 3</h2>
+<div id="outline-container-org758faf4" class="outline-2">
+<h2 id="org758faf4"><span class="section-number-2">3</span> Lecture 3</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgfaf6d73" class="outline-3">
-<h3 id="orgfaf6d73"><span class="section-number-3">3.1</span> Sorting</h3>
+</div><div id="outline-container-orgff223f4" class="outline-3">
+<h3 id="orgff223f4"><span class="section-number-3">3.1</span> Sorting</h3>
 <div class="outline-text-3" id="text-3-1">
-</div><div id="outline-container-orgfc0030b" class="outline-4">
-<h4 id="orgfc0030b"><span class="section-number-4">3.1.1</span> Insertion sort</h4>
+</div><div id="outline-container-org92cb402" class="outline-4">
+<h4 id="org92cb402"><span class="section-number-4">3.1.1</span> Insertion sort</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 we have an array <code>[1, 4, 5, 2, 3 ... n]</code>
@@ -769,8 +769,8 @@ i.e item on its left is less than <code>key</code></li>
 </div>
 </div>
 
-<div id="outline-container-org26f6310" class="outline-4">
-<h4 id="org26f6310"><span class="section-number-4">3.1.2</span> Binary-Insertion sort</h4>
+<div id="outline-container-org215d422" class="outline-4">
+<h4 id="org215d422"><span class="section-number-4">3.1.2</span> Binary-Insertion sort</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <ul class="org-ul">
 <li>Same as insertion sort except instead of swapping, we use binary search to insert item in sorted part of the array (part left to <code>key</code>)</li>
@@ -790,8 +790,8 @@ If insertion involves shifting items to right (as with swapping), then the compl
 </div>
 </div>
 
-<div id="outline-container-org198bb76" class="outline-4">
-<h4 id="org198bb76"><span class="section-number-4">3.1.3</span> Merge Sort</h4>
+<div id="outline-container-orgc6baced" class="outline-4">
+<h4 id="orgc6baced"><span class="section-number-4">3.1.3</span> Merge Sort</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <ul class="org-ul">
 <li>We start with an array <code>A</code>; we split it into <code>L</code>  and <code>R</code></li>
@@ -828,7 +828,7 @@ Sorting work is done in the merge step</li>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Charanjit Singh</p>
-<p class="date">Created: 2016-12-03 Sat 21:05</p>
+<p class="date">Created: 2016-12-03 Sat 21:10</p>
 <p class="validation"></p>
 </div>
 </body>
