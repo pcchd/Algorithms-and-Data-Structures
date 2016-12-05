@@ -39,7 +39,8 @@ Instead of keeping the meetings' topic vague discussions, we have decided to hav
     - [Lecture video 3](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-3-insertion-sort-merge-sort)
 
 - **Week 4**
-  _TBD_
-
+  - Meetup is scheduled for *Tuesday December 6, 2016* at *Phase 4, Mohali*
+  - Charanjit will be the mentor
+  - Topics covered will be those in Assignment 1, recitation video 3, and lecture video 4
 
 For more details about venue etc, come join our slack group: https://pcchd-slack.herokuapp.com/

@@ -2,72 +2,82 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb060d56">1. Lecture 1</a>
+<li><a href="#orgd3f73b2">1. Lecture 1</a>
 <ul>
-<li><a href="#orgae2218c">1.1. Peak Finding</a>
+<li><a href="#org0f2b19e">1.1. Peak Finding</a>
 <ul>
-<li><a href="#org4856a4b">1.1.1. One Dimensional</a></li>
-<li><a href="#orgfe7c30d">1.1.2. Two Dimensional</a></li>
-<li><a href="#org5c302bf">1.1.3. homework  Question</a></li>
+<li><a href="#org003d40b">1.1.1. One Dimensional</a></li>
+<li><a href="#orgc09d629">1.1.2. Two Dimensional</a></li>
+<li><a href="#orgceaefb8">1.1.3. homework  Question</a></li>
 </ul>
 </li>
-<li><a href="#org3e3273d">1.2. Prerequisites</a>
+<li><a href="#orgefde854">1.2. Prerequisites</a>
 <ul>
-<li><a href="#org106908c">1.2.1. Asymptotic complexity</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orgd58194b">2. Lecture 2</a>
-<ul>
-<li><a href="#org0dcc70e">2.1. Model of computation</a>
-<ul>
-<li><a href="#orgd7eb837">2.1.1. Random Access Machine</a></li>
-<li><a href="#org6c5f025">2.1.2. Pointer Machine</a></li>
-</ul>
-</li>
-<li><a href="#org4090c80">2.2. Cost Model of Python</a></li>
-<li><a href="#org420014f">2.3. Document distance problem</a>
-<ul>
-<li><a href="#org81a1958">2.3.1. Solutions</a></li>
-</ul>
-</li>
-<li><a href="#orgd22981c">2.4. Recitation</a>
-<ul>
-<li><a href="#org69f226e">2.4.1. Document Distance</a></li>
-<li><a href="#org89dec41">2.4.2. Python Cost Model</a></li>
+<li><a href="#org426ed5a">1.2.1. Asymptotic complexity</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgf0491f1">3. Lecture 3</a>
+<li><a href="#org34e8887">2. Lecture 2</a>
 <ul>
-<li><a href="#org182ca27">3.1. Sorting</a>
+<li><a href="#org4f5c373">2.1. Model of computation</a>
 <ul>
-<li><a href="#orgc2da0d0">3.1.1. Insertion sort</a></li>
-<li><a href="#org601f3e7">3.1.2. Binary-Insertion sort</a></li>
-<li><a href="#orgc99957b">3.1.3. Merge Sort</a></li>
+<li><a href="#orgb81e5df">2.1.1. Random Access Machine</a></li>
+<li><a href="#org2f38463">2.1.2. Pointer Machine</a></li>
 </ul>
 </li>
+<li><a href="#orgfb303ef">2.2. Cost Model of Python</a></li>
+<li><a href="#orgb52ad0b">2.3. Document distance problem</a>
+<ul>
+<li><a href="#org13e2e6c">2.3.1. Solutions</a></li>
+</ul>
+</li>
+<li><a href="#org0d1d4d9">2.4. Recitation</a>
+<ul>
+<li><a href="#orgb4f61fe">2.4.1. Document Distance</a></li>
+<li><a href="#org9726687">2.4.2. Python Cost Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org46250b4">3. Lecture 3</a>
+<ul>
+<li><a href="#orgd317ba8">3.1. Sorting</a>
+<ul>
+<li><a href="#orgb688642">3.1.1. Insertion sort</a></li>
+<li><a href="#orgda92ecd">3.1.2. Binary-Insertion sort</a></li>
+<li><a href="#org686bc62">3.1.3. Merge Sort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc6bea29">4. Lecture 4</a>
+<ul>
+<li><a href="#orged62f0e">4.1. Priority Queue</a>
+<ul>
+<li><a href="#orgc7480fc">4.1.1. Operations allowed on Priority Queue</a></li>
+</ul>
+</li>
+<li><a href="#org3eeb3be">4.2. Heap</a></li>
+<li><a href="#org13f46b6">4.3. Heap Sort</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-\#HTML<sub>MATHJAX</sub>: path: <https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML>
 
 
-<a id="orgb060d56"></a>
+<a id="orgd3f73b2"></a>
 
 # Lecture 1
 
 
-<a id="orgae2218c"></a>
+<a id="org0f2b19e"></a>
 
 ## Peak Finding
 
 
-<a id="org4856a4b"></a>
+<a id="org003d40b"></a>
 
 ### One Dimensional
 
@@ -93,7 +103,7 @@
             Complexity is `theta(log2 n)`
 
 
-<a id="orgfe7c30d"></a>
+<a id="orgc09d629"></a>
 
 ### Two Dimensional
 
@@ -126,19 +136,19 @@
         -   If `(i, j) >= (i, j-1), (i, j+1)`, then `(i, j)` is a 2-D peakq
 
 
-<a id="org5c302bf"></a>
+<a id="orgceaefb8"></a>
 
 ### homework  Question
 
 -   Argue that: every array has a peak
 
 
-<a id="org3e3273d"></a>
+<a id="orgefde854"></a>
 
 ## Prerequisites
 
 
-<a id="org106908c"></a>
+<a id="org426ed5a"></a>
 
 ### Asymptotic complexity
 
@@ -282,7 +292,7 @@
     -   It is not the average of all times, but a function which represents all the times
 
 
-<a id="orgd58194b"></a>
+<a id="org34e8887"></a>
 
 # Lecture 2
 
@@ -291,7 +301,7 @@
     input -> algorithm -> Output
 
 
-<a id="org0dcc70e"></a>
+<a id="org4f5c373"></a>
 
 ## Model of computation
 
@@ -301,7 +311,7 @@
 -   Can be considered different ways of thinking, similar to different programming styles (OOP, Functional etc)
 
 
-<a id="orgd7eb837"></a>
+<a id="orgb81e5df"></a>
 
 ### Random Access Machine
 
@@ -318,7 +328,7 @@
     -   store a constant number of words
 
 
-<a id="org6c5f025"></a>
+<a id="org2f38463"></a>
 
 ### Pointer Machine
 
@@ -328,7 +338,7 @@
 -   pointer is something that points to another object, or has a special value `null`
 
 
-<a id="org4090c80"></a>
+<a id="orgfb303ef"></a>
 
 ## Cost Model of Python
 
@@ -339,7 +349,7 @@
         -   table doubling (in lecture 9), takes constant time `O(1)`
     -   list = list1 + list
         -   Python simply create an empty list, and append each item of other two lists
-        -   Since `list.append` is constant time operation, adding two lists is `1 + O(len list1) + O(len list2)` (<sub>1</sub> +\_ because for creating a new list)
+        -   Since `list.append` is constant time operation, adding two lists is `1 + O(len list1) + O(len list2)` (\_1 +\_ because for creating a new list)
     -   list.sort
         -   takes `O(|l| \log |l|)` time
         -   uses comparison sort
@@ -350,7 +360,7 @@
     -   Most (not all) operations on dict are constant time
 
 
-<a id="org420014f"></a>
+<a id="orgb52ad0b"></a>
 
 ## Document distance problem
 
@@ -361,7 +371,7 @@
 -   A word is a string of alphanumeric characters
 
 
-<a id="org81a1958"></a>
+<a id="org13e2e6c"></a>
 
 ### Solutions
 
@@ -372,12 +382,12 @@
     -   Compute the dot product of two vectors obtained from frequencies
 
 
-<a id="orgd22981c"></a>
+<a id="org0d1d4d9"></a>
 
 ## Recitation
 
 
-<a id="org69f226e"></a>
+<a id="orgb4f61fe"></a>
 
 ### Document Distance
 
@@ -393,22 +403,22 @@
         If a word occur in only one vector, it contributes `0` to the sum.
 
 
-<a id="org89dec41"></a>
+<a id="org9726687"></a>
 
 ### Python Cost Model
 
 
-<a id="orgf0491f1"></a>
+<a id="org46250b4"></a>
 
 # Lecture 3
 
 
-<a id="org182ca27"></a>
+<a id="orgd317ba8"></a>
 
 ## Sorting
 
 
-<a id="orgc2da0d0"></a>
+<a id="orgb688642"></a>
 
 ### Insertion sort
 
@@ -426,7 +436,7 @@ we have an array `[1, 4, 5, 2, 3 ... n]`
     \(\theta(n)\) for compares and \(\theta(n)\) for swaps
 
 
-<a id="org601f3e7"></a>
+<a id="orgda92ecd"></a>
 
 ### Binary-Insertion sort
 
@@ -436,10 +446,10 @@ we have an array `[1, 4, 5, 2, 3 ... n]`
     \[T(n) = \theta(n \log n)\]
 
     \(\theta(n)\) for compares, and \(\theta(\log n)\) for binary-searched insertions. This is assuming that insertion is \(\theta n\).
-    If insertion involves shifting items to right (as with swapping), then the complexity is again $&theta; n<sup>2</sup>$b
+    If insertion involves shifting items to right (as with swapping), then the complexity is again $&theta; n^2$b
 
 
-<a id="orgc99957b"></a>
+<a id="org686bc62"></a>
 
 ### Merge Sort
 
@@ -461,3 +471,210 @@ we have an array `[1, 4, 5, 2, 3 ... n]`
     \[T(n) = \theta n \log  n\]
 
 -   Insertion sort has advantage over Merge Sort when auxiliary space is considered, because Insertion Sort works in-place
+
+
+<a id="orgc6bea29"></a>
+
+# Lecture 4
+
+
+<a id="orged62f0e"></a>
+
+## Priority Queue
+
+Implements a set `S` of elements, and each of these elements is associated with a key
+
+
+<a id="orgc7480fc"></a>
+
+### Operations allowed on Priority Queue
+
+-   **insert(S, x)**: Insert element `x` into set `S`
+-   **max(S)**: Return element of `S` which the largest key
+-   **extract\_max(S)**: Return element of `S` which the largest key, and remove it from `S`
+-   **increase\_key(S, x, k)**: Increase the value of `x`'s key to new value `k`
+
+
+<a id="org3eeb3be"></a>
+
+## Heap
+
+-   An implementation of Priority Queue
+
+-   An array visualized as a nearly complete binary tree
+
+    for example, if we have an array of 10 elements, we can number the array slots from 1 to 10 (irrespective of the contents of the slot),
+    and visualize it as a binary tree.
+
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+    <colgroup>
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+
+    <col  class="org-right" />
+    </colgroup>
+    <tbody>
+    <tr>
+    <td class="org-right">\(_1\)</td>
+    <td class="org-right">\(_2\)</td>
+    <td class="org-right">\(_3\)</td>
+    <td class="org-right">\(_4\)</td>
+    <td class="org-right">\(_5\)</td>
+    <td class="org-right">\(_6\)</td>
+    <td class="org-right">\(_7\)</td>
+    <td class="org-right">\(_8\)</td>
+    <td class="org-right">\(_9\)</td>
+    <td class="org-right">\(_{10}\)</td>
+    </tr>
+
+
+    <tr>
+    <td class="org-right">16</td>
+    <td class="org-right">14</td>
+    <td class="org-right">10</td>
+    <td class="org-right">8</td>
+    <td class="org-right">7</td>
+    <td class="org-right">9</td>
+    <td class="org-right">3</td>
+    <td class="org-right">2</td>
+    <td class="org-right">4</td>
+    <td class="org-right">1</td>
+    </tr>
+    </tbody>
+    </table>
+
+                                 1
+                               -----
+                              ( 16  )
+                               -----
+                         _______/\_________
+                        /                  \ 3
+                     2 /                  -----
+                   -----                 (  10 )
+                  ( 14  )                 -----
+                   -----\                6 /  \ 7
+                    /    \          ----- /    \ -----
+                 4 /    5 \        (  9  )      \  3  )
+                -----    -----      -----        -----
+               (  8  )  (  7  )
+                -----    -----
+                 / \  ----/ 10
+                /   \(  1  )
+             8 /   9 \-----
+         -----/      -----
+        (  2  )     (  4  )
+         -----       -----
+
+    -   **Heap as a tree**
+        -   Root of the tree is the first element (\(i = 1\))
+        -   \(parent(i) = \frac{i}{2}\)
+        -   \(left(i) = 2i\)
+        -   \(right(i) =  2i + 1\)
+
+    -   **Max heap property**
+
+        the key of a node is \(\geq\) the keys of its children
+
+    -   Min heap property
+
+        the key of a node is \(\leq\) the keys of its children
+
+-   **Heap Operations**
+    -   *build\_max\_heap* : produces a max heap from an arbitrary (unordered) array
+
+    -   *max\_heapify*: correct a *single* violation of the heap property in a subtree's root
+
+        Complexity of `max_heapify` is \(\lg{n}\) is because a heap is a nearly complete binary tree, so height of the tree is bounded by \(\lg{n}\),
+        so every algorithm that goes level by level is \(\lg{n}\) complexity
+
+    -   insert, extract\_max, heapsort
+
+-   **max\_heapify**
+    -   Assume that the trees rooted at `left(i)` and `right(i)` are max-heaps
+    -   If element `A[i]` violates the max-heap property, correct violation by "trickling" element A[i] down the tree,
+        making the subtree rooted at index i a max-heap
+
+    -   Pseudo Code
+
+            def max_heapify(A, largest):
+              l = left(i)
+              r = right(i)
+
+              if l <= heap_size(A) and A[l] > A[i]:
+                largest = l
+              else:
+                largets = i
+
+              if r <= heap_size(A) and A[r] > A[largest]:
+                largest = r
+
+              if largest != i:
+                exchange(A[i], A[largest])
+                max_heapify(A, largest)
+
+-   **build\_max\_heap(A)**
+
+    Converting an array \(A[1..n]\) to a max-heap
+
+        def build_max_heap(A):
+          for i in reversed(range(1, n/2)):
+            max_heapify(A, i)
+
+    We start at `n/2` here because all `A[n/2 + 1 ... n]` elements are leaves, so we can safely start with the assumption that all the child nodes
+    are max-heaps
+
+    -   Complexity by simple analysis is \(O(n\log{n})\), but with proper analysis, it actually is \(\theta{n}\)
+
+        Observe that
+
+        1.  `max_heapify` takes constant time \(O(1)\) for nodes that are one level above leaves
+            and in general \(O(l)\) time for nodes that are `l` levels above leaves
+
+        2.  `n/4` nodes with level 1, `n/8` with level 2, &#x2026;. , 1 node with \(\log{n}\) level
+
+        Total amount of work in the for loop can be summed as
+        \[\frac{n}{4}(1.c) + \frac{n}{8} (2.c) + \frac{n}{16} (3.c) + ... + 1(\lg{n} c)\]
+
+        Set \(n/4 = 2^k\)
+        \[c.2^k(\frac{1}{2^0} + \frac{2}{2^1} + \frac{3}{2^2} + ... + \frac{(k+1)}{2^k})\]
+
+        Here, \((\frac{1}{2^0} + \frac{2}{2^1} + \frac{3}{2^2} + ... + \frac{(k+1)}{2^k})\) is bounded by a constant \(\sum_{i=0}^k \frac{i+1}{2^i}\),
+        and \(c\) is a constant, and \(2^k\) is actually `n\4`, so we have \(\theta{n}\) complexity
+
+
+<a id="org13f46b6"></a>
+
+## Heap Sort
+
+Algorithm:
+
+1.  `build_max_heap` from the unordered array
+2.  Find max element `A[1]`
+3.  Swap elements `A[n]` with `A[1]`
+
+    now the maximum element is at the end of the array
+4.  Discard node `n` from the heap simply by decrementing heap size
+5.  New root may violate Max Heap Property but the children are max heaps. Run `max_heapify` to fix it
+6.  Go to step 2 unless heap is empty
+
+Complexity is \(O(n\log{n})\)
+
+-   After `n` iterations, the heap is empty.
+-   Every iteration involves a swap and a `max_heapify` operation which takes \(O(\log{n})\)
