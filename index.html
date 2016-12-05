@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-12-03 Sat 21:10 -->
+<!-- 2016-12-05 Mon 12:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>MIT Course 6-006 Notes : Programmers' Club Chandigarh Algo Study Group</title>
@@ -179,17 +179,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="styles/bigblow/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="styles/bigblow/css/bigblow.css"/>
-<link rel="stylesheet" type="text/css" href="styles/bigblow/css/hideshow.css"/>
-<script type="text/javascript" src="styles/bigblow/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/jquery-ui-1.10.2.min.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/jquery.localscroll-min.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/jquery.scrollTo-1.4.3.1-min.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/jquery.zclip.min.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/bigblow.js"></script>
-<script type="text/javascript" src="styles/bigblow/js/hideshow.js"></script>
-<script type="text/javascript" src="styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="http://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.js"></script>
+<script type="text/javascript" src="http://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -266,67 +261,78 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgafdbcbc">1. Lecture 1</a>
+<li><a href="#orgb897f94">1. Lecture 1</a>
 <ul>
-<li><a href="#org7611dfb">1.1. Peak Finding</a>
+<li><a href="#org2e6d6d5">1.1. Peak Finding</a>
 <ul>
-<li><a href="#org85465df">1.1.1. One Dimensional</a></li>
-<li><a href="#orgcd5a66d">1.1.2. Two Dimensional</a></li>
-<li><a href="#org6b95907">1.1.3. homework  Question</a></li>
+<li><a href="#org30a191f">1.1.1. One Dimensional</a></li>
+<li><a href="#org77e0634">1.1.2. Two Dimensional</a></li>
+<li><a href="#org79c316a">1.1.3. homework  Question</a></li>
 </ul>
 </li>
-<li><a href="#orgf62e7fa">1.2. Prerequisites</a>
+<li><a href="#orgf582bde">1.2. Prerequisites</a>
 <ul>
-<li><a href="#org4da070b">1.2.1. Asymptotic complexity</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org176e8fc">2. Lecture 2</a>
-<ul>
-<li><a href="#orgbf1f3a7">2.1. Model of computation</a>
-<ul>
-<li><a href="#orga1c4c1f">2.1.1. Random Access Machine</a></li>
-<li><a href="#orgf545fd1">2.1.2. Pointer Machine</a></li>
-</ul>
-</li>
-<li><a href="#orgf13f016">2.2. Cost Model of Python</a></li>
-<li><a href="#org745d316">2.3. Document distance problem</a>
-<ul>
-<li><a href="#org6c79533">2.3.1. Solutions</a></li>
-</ul>
-</li>
-<li><a href="#orge1ee9dd">2.4. Recitation</a>
-<ul>
-<li><a href="#org9653016">2.4.1. Document Distance</a></li>
-<li><a href="#org1ae3f2f">2.4.2. Python Cost Model</a></li>
+<li><a href="#org661a587">1.2.1. Asymptotic complexity</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org758faf4">3. Lecture 3</a>
+<li><a href="#org76f6b14">2. Lecture 2</a>
 <ul>
-<li><a href="#orgff223f4">3.1. Sorting</a>
+<li><a href="#org7134236">2.1. Model of computation</a>
 <ul>
-<li><a href="#org92cb402">3.1.1. Insertion sort</a></li>
-<li><a href="#org215d422">3.1.2. Binary-Insertion sort</a></li>
-<li><a href="#orgc6baced">3.1.3. Merge Sort</a></li>
+<li><a href="#org46e07c2">2.1.1. Random Access Machine</a></li>
+<li><a href="#org112d169">2.1.2. Pointer Machine</a></li>
 </ul>
 </li>
+<li><a href="#orgd13bb5c">2.2. Cost Model of Python</a></li>
+<li><a href="#org46eac36">2.3. Document distance problem</a>
+<ul>
+<li><a href="#org6db7029">2.3.1. Solutions</a></li>
+</ul>
+</li>
+<li><a href="#org00e5602">2.4. Recitation</a>
+<ul>
+<li><a href="#orge787e0e">2.4.1. Document Distance</a></li>
+<li><a href="#org0b7c3e4">2.4.2. Python Cost Model</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org05cb749">3. Lecture 3</a>
+<ul>
+<li><a href="#orgd33f982">3.1. Sorting</a>
+<ul>
+<li><a href="#orgbac0995">3.1.1. Insertion sort</a></li>
+<li><a href="#orgdfbdfce">3.1.2. Binary-Insertion sort</a></li>
+<li><a href="#orgaeba3cb">3.1.3. Merge Sort</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org5c5af81">4. Lecture 4</a>
+<ul>
+<li><a href="#orga007041">4.1. Priority Queue</a>
+<ul>
+<li><a href="#org4a3a775">4.1.1. Operations allowed on Priority Queue</a></li>
+</ul>
+</li>
+<li><a href="#orge58e2a0">4.2. Heap</a></li>
+<li><a href="#org3db8a2a">4.3. Heap Sort</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgafdbcbc" class="outline-2">
-<h2 id="orgafdbcbc"><span class="section-number-2">1</span> Lecture 1</h2>
+<div id="outline-container-orgb897f94" class="outline-2">
+<h2 id="orgb897f94"><span class="section-number-2">1</span> Lecture 1</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-org7611dfb" class="outline-3">
-<h3 id="org7611dfb"><span class="section-number-3">1.1</span> Peak Finding</h3>
+</div><div id="outline-container-org2e6d6d5" class="outline-3">
+<h3 id="org2e6d6d5"><span class="section-number-3">1.1</span> Peak Finding</h3>
 <div class="outline-text-3" id="text-1-1">
-</div><div id="outline-container-org85465df" class="outline-4">
-<h4 id="org85465df"><span class="section-number-4">1.1.1</span> One Dimensional</h4>
+</div><div id="outline-container-org30a191f" class="outline-4">
+<h4 id="org30a191f"><span class="section-number-4">1.1.1</span> One Dimensional</h4>
 <div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
 <li>A position <code>b</code> in array of <code>a, b, c, d, e, f</code> is a peak iff <code>b &gt;= a</code> and <code>b &gt;= c</code>
@@ -334,20 +340,20 @@ For edges (<code>f</code>) we only look at one side.</li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="orgfd31964"></a>Problem: Find a peak if it exists<br  /><div class="outline-text-5" id="text-1-1-1-1">
+<ol class="org-ol"><li><a id="org086fbc9"></a>Problem: Find a peak if it exists<br  /><div class="outline-text-5" id="text-1-1-1-1">
 <p>
 We have an array <code>a</code> of length <code>n</code>
 </p>
 </div>
 
-<ol class="org-ol"><li><a id="org3312bd3"></a>Straightforward algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-1">
+<ol class="org-ol"><li><a id="org91729f2"></a>Straightforward algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-1">
 <ul class="org-ul">
 <li>Start from the left, keep comparing until a peak is found
 Worst case complexity: <code>theta n</code></li>
 </ul>
 </div></li>
 
-<li><a id="org41c5e93"></a>Divide and Conquer Algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-2">
+<li><a id="org6da6e4a"></a>Divide and Conquer Algorithm<br  /><div class="outline-text-6" id="text-1-1-1-1-2">
 <ul class="org-ul">
 <li>Start at <code>n/2</code></li>
 <li>if <code>a[n/2] &lt; a[n/2 - 1]</code> then only loot at left half <code>1 .. n/2 -1</code></li>
@@ -363,27 +369,27 @@ Complexity is <code>theta(log2 n)</code>
 </div></li></ol></li></ol>
 </div>
 
-<div id="outline-container-orgcd5a66d" class="outline-4">
-<h4 id="orgcd5a66d"><span class="section-number-4">1.1.2</span> Two Dimensional</h4>
+<div id="outline-container-org77e0634" class="outline-4">
+<h4 id="org77e0634"><span class="section-number-4">1.1.2</span> Two Dimensional</h4>
 <div class="outline-text-4" id="text-1-1-2">
 <ul class="org-ul">
 <li>An element <code>a</code> which is surrounded by <code>c</code> (top), <code>d</code> (right), <code>e</code> bottom and <code>b</code> (left), is a peak iff <code>a &gt;= b, a &gt;= d, a &gt;= c, a &gt;= e</code></li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org930b8e9"></a>Problem: Find peak if it exists<br  /><div class="outline-text-5" id="text-1-1-2-1">
+<ol class="org-ol"><li><a id="org18d546c"></a>Problem: Find peak if it exists<br  /><div class="outline-text-5" id="text-1-1-2-1">
 <p>
 We have a 2 dimensional array of <code>n X m</code> rows and columns
 </p>
 </div>
 
-<ol class="org-ol"><li><a id="org025fc66"></a>Greedy Ascent Algorithm<br  /><div class="outline-text-6" id="text-1-1-2-1-1">
+<ol class="org-ol"><li><a id="org5d848eb"></a>Greedy Ascent Algorithm<br  /><div class="outline-text-6" id="text-1-1-2-1-1">
 <ul class="org-ul">
 <li>Complexity: <code>theta(nm)</code></li>
 </ul>
 </div></li>
 
-<li><a id="orge878671"></a>Divide and Conquer: Incorrect approach<br  /><div class="outline-text-6" id="text-1-1-2-1-2">
+<li><a id="orge6e08fa"></a>Divide and Conquer: Incorrect approach<br  /><div class="outline-text-6" id="text-1-1-2-1-2">
 <ul class="org-ul">
 <li>Pick the middle column <code>j = m/2</code></li>
 <li>Find a one-dimensional-peak at <code>(i, j)</code></li>
@@ -391,13 +397,13 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="orgfd4857f"></a>Problem<br  /><div class="outline-text-7" id="text-1-1-2-1-2-1">
+<ol class="org-ol"><li><a id="orgc3f9f86"></a>Problem<br  /><div class="outline-text-7" id="text-1-1-2-1-2-1">
 <ul class="org-ul">
 <li>A 2D array might not have a peak</li>
 </ul>
 </div></li></ol></li>
 
-<li><a id="orge819310"></a>Divide and Conquer: Correct approach<br  /><div class="outline-text-6" id="text-1-1-2-1-3">
+<li><a id="org5132e16"></a>Divide and Conquer: Correct approach<br  /><div class="outline-text-6" id="text-1-1-2-1-3">
 <ul class="org-ul">
 <li>Pick a middle column <code>j = m/2</code></li>
 <li>Find global maximum on column <code>j</code> at <code>(i, j)</code></li>
@@ -408,8 +414,8 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </div></li></ol></li></ol>
 </div>
 
-<div id="outline-container-org6b95907" class="outline-4">
-<h4 id="org6b95907"><span class="section-number-4">1.1.3</span> homework  Question</h4>
+<div id="outline-container-org79c316a" class="outline-4">
+<h4 id="org79c316a"><span class="section-number-4">1.1.3</span> homework  Question</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <ul class="org-ul">
 <li>Argue that: every array has a peak</li>
@@ -418,11 +424,11 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </div>
 </div>
 
-<div id="outline-container-orgf62e7fa" class="outline-3">
-<h3 id="orgf62e7fa"><span class="section-number-3">1.2</span> Prerequisites</h3>
+<div id="outline-container-orgf582bde" class="outline-3">
+<h3 id="orgf582bde"><span class="section-number-3">1.2</span> Prerequisites</h3>
 <div class="outline-text-3" id="text-1-2">
-</div><div id="outline-container-org4da070b" class="outline-4">
-<h4 id="org4da070b"><a id="ID-7483C04B-5DDB-4994-8A9F-94E120A65BF2"></a><span class="section-number-4">1.2.1</span> Asymptotic complexity</h4>
+</div><div id="outline-container-org661a587" class="outline-4">
+<h4 id="org661a587"><a id="ID-7483C04B-5DDB-4994-8A9F-94E120A65BF2"></a><span class="section-number-4">1.2.1</span> Asymptotic complexity</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <ul class="org-ul">
 <li>Provide basic vocabulary for discussing design and analysis of algorithms</li>
@@ -432,14 +438,14 @@ We have a 2 dimensional array of <code>n X m</code> rows and columns
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org9b710e3"></a>Big Oh<br  /><div class="outline-text-5" id="text-1-2-1-1">
+<ol class="org-ol"><li><a id="org343b7a0"></a>Big Oh<br  /><div class="outline-text-5" id="text-1-2-1-1">
 <ul class="org-ul">
 <li>Worst case running time of an algorithm</li>
 <li>Eventually for all sufficiently large <code>n</code>, <code>T(n)</code> is bounded above by a constant multiple of <code>f(n)</code></li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org24310f4"></a>Properties<br  /><div class="outline-text-6" id="text-1-2-1-1-1">
+<ol class="org-ol"><li><a id="org9cd9e34"></a>Properties<br  /><div class="outline-text-6" id="text-1-2-1-1-1">
 <ul class="org-ul">
 <li><p>
 If \(f(x)\) can be written as a finite set of sum of other functions, then the fastest growing function determine the order of \(f(n)\)
@@ -569,13 +575,13 @@ For a constant \(k\), \(O(kg) = O(g)\) if \(k\) is nonzero
 </ul>
 </div></li></ol></li>
 
-<li><a id="org4743193"></a>Omega<br  /><div class="outline-text-5" id="text-1-2-1-2">
+<li><a id="orga7ef578"></a>Omega<br  /><div class="outline-text-5" id="text-1-2-1-2">
 <ul class="org-ul">
 <li>Best case running time of an algorithm</li>
 </ul>
 </div></li>
 
-<li><a id="org22fc9d8"></a>Theta<br  /><div class="outline-text-5" id="text-1-2-1-3">
+<li><a id="org7075216"></a>Theta<br  /><div class="outline-text-5" id="text-1-2-1-3">
 <ul class="org-ul">
 <li>Average case running time of an algorithm</li>
 <li>It is not the average of all times, but a function which represents all the times</li>
@@ -585,8 +591,8 @@ For a constant \(k\), \(O(kg) = O(g)\) if \(k\) is nonzero
 </div>
 </div>
 
-<div id="outline-container-org176e8fc" class="outline-2">
-<h2 id="org176e8fc"><span class="section-number-2">2</span> Lecture 2</h2>
+<div id="outline-container-org76f6b14" class="outline-2">
+<h2 id="org76f6b14"><span class="section-number-2">2</span> Lecture 2</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><p>
@@ -599,8 +605,8 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<div id="outline-container-orgbf1f3a7" class="outline-3">
-<h3 id="orgbf1f3a7"><span class="section-number-3">2.1</span> Model of computation</h3>
+<div id="outline-container-org7134236" class="outline-3">
+<h3 id="org7134236"><span class="section-number-3">2.1</span> Model of computation</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>specifies
@@ -612,8 +618,8 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<div id="outline-container-orga1c4c1f" class="outline-4">
-<h4 id="orga1c4c1f"><span class="section-number-4">2.1.1</span> Random Access Machine</h4>
+<div id="outline-container-org46e07c2" class="outline-4">
+<h4 id="org46e07c2"><span class="section-number-4">2.1.1</span> Random Access Machine</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>Mathematical analog of Random Access Memory</li>
@@ -622,7 +628,7 @@ input -&gt; algorithm -&gt; Output
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org00cdadf"></a>How we compute with this model?<br  /><div class="outline-text-5" id="text-2-1-1-1">
+<ol class="org-ol"><li><a id="orgc82a218"></a>How we compute with this model?<br  /><div class="outline-text-5" id="text-2-1-1-1">
 <p>
 In constant time an algorithm can
 </p>
@@ -634,8 +640,8 @@ In constant time an algorithm can
 </div></li></ol>
 </div>
 
-<div id="outline-container-orgf545fd1" class="outline-4">
-<h4 id="orgf545fd1"><span class="section-number-4">2.1.2</span> Pointer Machine</h4>
+<div id="outline-container-org112d169" class="outline-4">
+<h4 id="org112d169"><span class="section-number-4">2.1.2</span> Pointer Machine</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>Dynamically allocated objects</li>
@@ -647,8 +653,8 @@ In constant time an algorithm can
 </div>
 </div>
 
-<div id="outline-container-orgf13f016" class="outline-3">
-<h3 id="orgf13f016"><span class="section-number-3">2.2</span> Cost Model of Python</h3>
+<div id="outline-container-orgd13bb5c" class="outline-3">
+<h3 id="orgd13bb5c"><span class="section-number-3">2.2</span> Cost Model of Python</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>List
@@ -662,7 +668,7 @@ In constant time an algorithm can
 <li>list = list1 + list
 <ul class="org-ul">
 <li>Python simply create an empty list, and append each item of other two lists</li>
-<li>Since <code>list.append</code> is constant time operation, adding two lists is <code>1 + O(len list1) + O(len list2)</code> (<sub>1</sub> +_ because for creating a new list)</li>
+<li>Since <code>list.append</code> is constant time operation, adding two lists is <code>1 + O(len list1) + O(len list2)</code> (_1 +_ because for creating a new list)</li>
 </ul></li>
 <li>list.sort
 <ul class="org-ul">
@@ -681,8 +687,8 @@ takes <code>O(1)</code> time</li>
 </div>
 </div>
 
-<div id="outline-container-org745d316" class="outline-3">
-<h3 id="org745d316"><span class="section-number-3">2.3</span> Document distance problem</h3>
+<div id="outline-container-org46eac36" class="outline-3">
+<h3 id="org46eac36"><span class="section-number-3">2.3</span> Document distance problem</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 <code>d(D1, D2)</code>
@@ -694,10 +700,10 @@ takes <code>O(1)</code> time</li>
 <li>A word is a string of alphanumeric characters</li>
 </ul>
 </div>
-<div id="outline-container-org6c79533" class="outline-4">
-<h4 id="org6c79533"><span class="section-number-4">2.3.1</span> Solutions</h4>
+<div id="outline-container-org6db7029" class="outline-4">
+<h4 id="org6db7029"><span class="section-number-4">2.3.1</span> Solutions</h4>
 <div class="outline-text-4" id="text-2-3-1">
-</div><ol class="org-ol"><li><a id="org94e25f4"></a>Simple solution: Shared Words<br  /><div class="outline-text-5" id="text-2-3-1-1">
+</div><ol class="org-ol"><li><a id="orgfae17a3"></a>Simple solution: Shared Words<br  /><div class="outline-text-5" id="text-2-3-1-1">
 <ul class="org-ul">
 <li>Split the document into words</li>
 <li>Compute word frequencies</li>
@@ -707,18 +713,18 @@ takes <code>O(1)</code> time</li>
 </div>
 </div>
 
-<div id="outline-container-orge1ee9dd" class="outline-3">
-<h3 id="orge1ee9dd"><span class="section-number-3">2.4</span> Recitation</h3>
+<div id="outline-container-org00e5602" class="outline-3">
+<h3 id="org00e5602"><span class="section-number-3">2.4</span> Recitation</h3>
 <div class="outline-text-3" id="text-2-4">
-</div><div id="outline-container-org9653016" class="outline-4">
-<h4 id="org9653016"><span class="section-number-4">2.4.1</span> Document Distance</h4>
+</div><div id="outline-container-orge787e0e" class="outline-4">
+<h4 id="orge787e0e"><span class="section-number-4">2.4.1</span> Document Distance</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <ul class="org-ul">
 <li>We have two strings</li>
 </ul>
 </div>
 
-<ol class="org-ol"><li><a id="org4825b05"></a>Algorithm<br  /><div class="outline-text-5" id="text-2-4-1-1">
+<ol class="org-ol"><li><a id="orga82ebc5"></a>Algorithm<br  /><div class="outline-text-5" id="text-2-4-1-1">
 <ul class="org-ul">
 <li>Split the lists into words, get rid of punctuation and lowercase every word</li>
 <li>Convert lists to vectors of word and frequency of the word in the list.
@@ -730,19 +736,19 @@ If a word occur in only one vector, it contributes <code>0</code> to the sum.</l
 </div></li></ol>
 </div>
 
-<div id="outline-container-org1ae3f2f" class="outline-4">
-<h4 id="org1ae3f2f"><span class="section-number-4">2.4.2</span> Python Cost Model</h4>
+<div id="outline-container-org0b7c3e4" class="outline-4">
+<h4 id="org0b7c3e4"><span class="section-number-4">2.4.2</span> Python Cost Model</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org758faf4" class="outline-2">
-<h2 id="org758faf4"><span class="section-number-2">3</span> Lecture 3</h2>
+<div id="outline-container-org05cb749" class="outline-2">
+<h2 id="org05cb749"><span class="section-number-2">3</span> Lecture 3</h2>
 <div class="outline-text-2" id="text-3">
-</div><div id="outline-container-orgff223f4" class="outline-3">
-<h3 id="orgff223f4"><span class="section-number-3">3.1</span> Sorting</h3>
+</div><div id="outline-container-orgd33f982" class="outline-3">
+<h3 id="orgd33f982"><span class="section-number-3">3.1</span> Sorting</h3>
 <div class="outline-text-3" id="text-3-1">
-</div><div id="outline-container-org92cb402" class="outline-4">
-<h4 id="org92cb402"><span class="section-number-4">3.1.1</span> Insertion sort</h4>
+</div><div id="outline-container-orgbac0995" class="outline-4">
+<h4 id="orgbac0995"><span class="section-number-4">3.1.1</span> Insertion sort</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 we have an array <code>[1, 4, 5, 2, 3 ... n]</code>
@@ -769,8 +775,8 @@ i.e item on its left is less than <code>key</code></li>
 </div>
 </div>
 
-<div id="outline-container-org215d422" class="outline-4">
-<h4 id="org215d422"><span class="section-number-4">3.1.2</span> Binary-Insertion sort</h4>
+<div id="outline-container-orgdfbdfce" class="outline-4">
+<h4 id="orgdfbdfce"><span class="section-number-4">3.1.2</span> Binary-Insertion sort</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <ul class="org-ul">
 <li>Same as insertion sort except instead of swapping, we use binary search to insert item in sorted part of the array (part left to <code>key</code>)</li>
@@ -784,14 +790,14 @@ i.e item on its left is less than <code>key</code></li>
 
 <p>
 \(\theta(n)\) for compares, and \(\theta(\log n)\) for binary-searched insertions. This is assuming that insertion is \(\theta n\).
-If insertion involves shifting items to right (as with swapping), then the complexity is again $&theta; n<sup>2</sup>$b
+If insertion involves shifting items to right (as with swapping), then the complexity is again $&theta; n^2$b
 </p></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgc6baced" class="outline-4">
-<h4 id="orgc6baced"><span class="section-number-4">3.1.3</span> Merge Sort</h4>
+<div id="outline-container-orgaeba3cb" class="outline-4">
+<h4 id="orgaeba3cb"><span class="section-number-4">3.1.3</span> Merge Sort</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <ul class="org-ul">
 <li>We start with an array <code>A</code>; we split it into <code>L</code>  and <code>R</code></li>
@@ -825,10 +831,287 @@ Sorting work is done in the merge step</li>
 </div>
 </div>
 </div>
+
+<div id="outline-container-org5c5af81" class="outline-2">
+<h2 id="org5c5af81"><span class="section-number-2">4</span> Lecture 4</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-orga007041" class="outline-3">
+<h3 id="orga007041"><span class="section-number-3">4.1</span> Priority Queue</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Implements a set <code>S</code> of elements, and each of these elements is associated with a key
+</p>
+</div>
+
+<div id="outline-container-org4a3a775" class="outline-4">
+<h4 id="org4a3a775"><span class="section-number-4">4.1.1</span> Operations allowed on Priority Queue</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li><b>insert(S, x)</b>: Insert element <code>x</code> into set <code>S</code></li>
+<li><b>max(S)</b>: Return element of <code>S</code> which the largest key</li>
+<li><b>extract_max(S)</b>: Return element of <code>S</code> which the largest key, and remove it from <code>S</code></li>
+<li><b>increase_key(S, x, k)</b>: Increase the value of <code>x</code>'s key to new value <code>k</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge58e2a0" class="outline-3">
+<h3 id="orge58e2a0"><span class="section-number-3">4.2</span> Heap</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>An implementation of Priority Queue</li>
+
+<li><p>
+An array visualized as a nearly complete binary tree
+</p>
+
+<p>
+for example, if we have an array of 10 elements, we can number the array slots from 1 to 10 (irrespective of the contents of the slot),
+and visualize it as a binary tree.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">\(_1\)</td>
+<td class="org-right">\(_2\)</td>
+<td class="org-right">\(_3\)</td>
+<td class="org-right">\(_4\)</td>
+<td class="org-right">\(_5\)</td>
+<td class="org-right">\(_6\)</td>
+<td class="org-right">\(_7\)</td>
+<td class="org-right">\(_8\)</td>
+<td class="org-right">\(_9\)</td>
+<td class="org-right">\(_{10}\)</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-right">14</td>
+<td class="org-right">10</td>
+<td class="org-right">8</td>
+<td class="org-right">7</td>
+<td class="org-right">9</td>
+<td class="org-right">3</td>
+<td class="org-right">2</td>
+<td class="org-right">4</td>
+<td class="org-right">1</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-artist">                         1
+                       -----
+                      ( 16  )
+                       -----
+                 _______/\_________
+                /                  \ 3
+             2 /                  -----
+           -----                 (  10 )
+          ( 14  )                 -----
+           -----\                6 /  \ 7
+            /    \          ----- /    \ -----
+         4 /    5 \        (  9  )      \  3  )
+        -----    -----      -----        -----
+       (  8  )  (  7  )
+        -----    -----
+         / \  ----/ 10
+        /   \(  1  )
+     8 /   9 \-----
+ -----/      -----
+(  2  )     (  4  )
+ -----       -----
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><b>Heap as a tree</b>
+<ul class="org-ul">
+<li>Root of the tree is the first element (\(i = 1\))</li>
+<li>\(parent(i) = \frac{i}{2}\)</li>
+<li>\(left(i) = 2i\)</li>
+<li>\(right(i) =  2i + 1\)</li>
+</ul></li>
+
+<li><p>
+<b>Max heap property</b>
+</p>
+
+<p>
+the key of a node is \(\geq\) the keys of its children
+</p></li>
+
+<li><p>
+Min heap property
+</p>
+
+<p>
+the key of a node is \(\leq\) the keys of its children
+</p></li>
+</ul></li>
+
+<li><b>Heap Operations</b>
+<ul class="org-ul">
+<li><i>build_max_heap</i> : produces a max heap from an arbitrary (unordered) array</li>
+
+<li><p>
+<i>max_heapify</i>: correct a <i>single</i> violation of the heap property in a subtree's root
+</p>
+
+<p>
+Complexity of <code>max_heapify</code> is \(\lg{n}\) is because a heap is a nearly complete binary tree, so height of the tree is bounded by \(\lg{n}\),
+so every algorithm that goes level by level is \(\lg{n}\) complexity
+</p></li>
+
+<li>insert, extract_max, heapsort</li>
+</ul></li>
+
+<li><b>max_heapify</b>
+
+<ul class="org-ul">
+<li>Assume that the trees rooted at <code>left(i)</code> and <code>right(i)</code> are max-heaps</li>
+<li>If element <code>A[i]</code> violates the max-heap property, correct violation by "trickling" element A[i] down the tree,
+making the subtree rooted at index i a max-heap</li>
+
+<li><p>
+Pseudo Code
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #7E57C2;">def</span> <span style="color: #42A5F5;">max_heapify</span>(A, largest):
+  <span style="color: #26A69A;">l</span> = left(i)
+  <span style="color: #26A69A;">r</span> = right(i)
+
+  <span style="color: #7E57C2;">if</span> l &lt;= heap_size(A) <span style="color: #7E57C2;">and</span> A[l] &gt; A[i]:
+    <span style="color: #26A69A;">largest</span> = l
+  <span style="color: #7E57C2;">else</span>:
+    <span style="color: #26A69A;">largets</span> = i
+
+  <span style="color: #7E57C2;">if</span> r &lt;= heap_size(A) <span style="color: #7E57C2;">and</span> A[r] &gt; A[largest]:
+    <span style="color: #26A69A;">largest</span> = r
+
+  <span style="color: #7E57C2;">if</span> largest != i:
+    exchange(A[i], A[largest])
+    max_heapify(A, largest)
+</pre>
+</div></li>
+</ul></li>
+
+<li><p>
+<b>build_max_heap(A)</b>
+</p>
+
+<p>
+Converting an array \(A[1..n]\) to a max-heap
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #7E57C2;">def</span> <span style="color: #42A5F5;">build_max_heap</span>(A):
+  <span style="color: #7E57C2;">for</span> i <span style="color: #7E57C2;">in</span> <span style="color: #0097A7;">reversed</span>(<span style="color: #0097A7;">range</span>(1, n/2)):
+    max_heapify(A, i)
+</pre>
+</div>
+
+<p>
+We start at <code>n/2</code> here because all <code>A[n/2 + 1 ... n]</code> elements are leaves, so we can safely start with the assumption that all the child nodes
+are max-heaps
+</p>
+
+<ul class="org-ul">
+<li><p>
+Complexity by simple analysis is \(O(n\log{n})\), but with proper analysis, it actually is \(\theta{n}\)
+</p>
+
+<p>
+Observe that
+</p>
+<ol class="org-ol">
+<li><code>max_heapify</code> takes constant time \(O(1)\) for nodes that are one level above leaves
+and in general \(O(l)\) time for nodes that are <code>l</code> levels above leaves</li>
+
+<li><code>n/4</code> nodes with level 1, <code>n/8</code> with level 2, &#x2026;. , 1 node with \(\log{n}\) level</li>
+</ol>
+<p>
+Total amount of work in the for loop can be summed as
+\[\frac{n}{4}(1.c) + \frac{n}{8} (2.c) + \frac{n}{16} (3.c) + ... + 1(\lg{n} c)\]
+</p>
+
+<p>
+Set \(n/4 = 2^k\)
+\[c.2^k(\frac{1}{2^0} + \frac{2}{2^1} + \frac{3}{2^2} + ... + \frac{(k+1)}{2^k})\]
+</p>
+
+<p>
+Here, \((\frac{1}{2^0} + \frac{2}{2^1} + \frac{3}{2^2} + ... + \frac{(k+1)}{2^k})\) is bounded by a constant \(\sum_{i=0}^k \frac{i+1}{2^i}\),
+and \(c\) is a constant, and \(2^k\) is actually <code>n\4</code>, so we have \(\theta{n}\) complexity
+</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3db8a2a" class="outline-3">
+<h3 id="org3db8a2a"><span class="section-number-3">4.3</span> Heap Sort</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+Algorithm:
+</p>
+
+<ol class="org-ol">
+<li><code>build_max_heap</code> from the unordered array</li>
+<li>Find max element <code>A[1]</code></li>
+<li><p>
+Swap elements <code>A[n]</code> with <code>A[1]</code>
+</p>
+
+<p>
+now the maximum element is at the end of the array
+</p></li>
+<li>Discard node <code>n</code> from the heap simply by decrementing heap size</li>
+<li>New root may violate Max Heap Property but the children are max heaps. Run <code>max_heapify</code> to fix it</li>
+<li>Go to step 2 unless heap is empty</li>
+</ol>
+
+
+<p>
+Complexity is \(O(n\log{n})\)
+</p>
+
+<ul class="org-ul">
+<li>After <code>n</code> iterations, the heap is empty.</li>
+<li>Every iteration involves a swap and a <code>max_heapify</code> operation which takes \(O(\log{n})\)</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Charanjit Singh</p>
-<p class="date">Created: 2016-12-03 Sat 21:10</p>
+<p class="date">Created: 2016-12-05 Mon 12:35</p>
 <p class="validation"></p>
 </div>
 </body>
